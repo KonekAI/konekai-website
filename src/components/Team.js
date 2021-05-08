@@ -1,10 +1,10 @@
 import React from "react";
-import Telvin from "../images/Telvin.jpg";
+import Telvin from "../images/Telvin.png";
 import James from "../images/James.png";
 import crystal from "../images/crystal.jpg";
 import arjun from "../images/arjun.jpeg";
 import background1 from "../images/background1.png";
-import { Card} from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const Team = () => {
   const telvinCard = () => (
