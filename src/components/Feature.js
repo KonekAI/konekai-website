@@ -6,9 +6,7 @@ export default function Feature() {
         backgroundColor:"rgba(255, 209, 102, 0.2)",
         border: "none",
         height: "20em",
-        borderRadius: "20px"
-        
-        
+        borderRadius: "20px"  
     }
     const cardBtnStyle = {
         backgroundColor:"#14EDC6",

@@ -6,8 +6,13 @@ import Feature from "./components/Feature";
 import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
+import { useEffect } from "react";
+import axios from 'axios';
 function App() {
-  
+  useEffect(()=>{
+    axios.get(`https://konek-ai.herokuapp.com/oauthButton`)
+    .then(res=>res.json());
+  })
   return (
     <>
       <Container>
