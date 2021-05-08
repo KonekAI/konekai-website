@@ -1,13 +1,15 @@
-import logo from './logo.svg';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
 
 function App() {
   return (
 <>
 <Container>
-  <Col>
-  </Col>
+  <Row>
+    <Header />
+  </Row>
 </Container>
 
 </>
