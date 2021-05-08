@@ -15,7 +15,7 @@ const Team = () => {
         style={{ width: "100%", height: "50%", overFlow: "hidden" }}
       />
       <Card.Body>
-        <Card.Title>asdf</Card.Title>
+        <Card.Title>Telvin Zhong</Card.Title>
         <Card.Text>
           M.S. Computer Science student with an interest in backend engineering,
           cloud services, full stack development
@@ -65,7 +65,7 @@ const Team = () => {
         style={{ width: "100%", height: "50%", overFlow: "hidden" }}
       />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Huan-Yi Shen</Card.Title>
         <Card.Text>
           Growing programmer currently studying computer engineering at the
           University of Waterloo. Fluent in Mandarin and English.
@@ -118,7 +118,7 @@ const Team = () => {
         style={{ width: "100%", height: "50%", overFlow: "hidden" }}
       />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Crystal Villanueva </Card.Title>
         <Card.Text>
           Fullstack software engineer, former neuroscientist and a love for
           language. My approach to leadership is team-oriented.
