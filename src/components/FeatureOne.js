@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Card, Button} from 'react-bootstrap';
+import videoModal from './videoModal';
 
 export default function FeatureOne() {
+    const handleClick = () => {
+
+    }
     const cardStyle = {
         backgroundColor:"rgba(255, 209, 102, 0.2)",
         border: "none",
@@ -14,7 +18,9 @@ export default function FeatureOne() {
     const cardBtnStyle = {
         backgroundColor:"rgba(20, 237, 198, 0.2)",
         flex: "end",
-        radius: "60px"
+        radius: "60px",
+        border:"none",
+        borderRadius:"60px"
     }
     const bodyStyle = {
         marginLeft:"10em"
@@ -37,7 +43,7 @@ export default function FeatureOne() {
         <Card.Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </Card.Text>
-        <Button variant="primary" style={cardBtnStyle}>Go somewhere</Button>
+        <Button onClick={handleClick} style={cardBtnStyle}>Go somewhere</Button>
         </Card.Body>
         </Card>
         </div>

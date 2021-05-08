@@ -4,20 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Airplane from "./components/Airplane";
 import FeatureOne from "./components/FeatureOne";
+import Airplane2 from "./components/Airplane2";
 import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import { useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 function App() {
-  useEffect(()=>{
-    axios.get(`https://konek-ai.herokuapp.com/oauthButton`,{
-      target: 'https://konek-ai.herokuapp.com',
-      logLevel: 'debug',
-      changeOrigin: true
-  })
-    .then(res=>res.json());
-  })
   return (
     <>
       <Container>
@@ -27,6 +20,9 @@ function App() {
         </Row>
         <Row>
           <FeatureOne />
+        </Row>
+        <Row>
+          <Airplane2 />
         </Row>
         <Row style={{ paddingTop: "20px" }}>
           <FeatureTwo />
