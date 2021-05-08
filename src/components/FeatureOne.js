@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { React, useState} from "react";
 import { Card, Button } from "react-bootstrap";
 import Modal from "react-modal";
 
@@ -32,7 +32,7 @@ export default function FeatureOne() {
       transform: "translate(-50%, -50%)",
     },
   };
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
   }

@@ -1,12 +1,12 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Image } from "react-bootstrap";
+import { Navbar, Nav, Image } from "react-bootstrap";
 import logo from "../images/logo.png";
 
 
 function NavBar() {
   const navLogo = {
-    width:"50%",
-    height:"50%"
+    width:"40%",
+    height:"40%"
   }
   const navLink = {
     margin: "0em 1em 0em 1em",

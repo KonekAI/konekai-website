@@ -9,14 +9,11 @@ import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import NavBar from './components/Navbar';
-import { useEffect } from "react";
-// import axios from "axios";
 function App() {
   return (
     <>
     <NavBar />
       <Container>
-        <Row></Row>
         <Row>
           <Header />
         </Row>

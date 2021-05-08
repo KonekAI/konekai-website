@@ -3,7 +3,6 @@ import { Card, Button } from "react-bootstrap";
 import Modal from "react-modal";
 
 export default function FeatureThree() {
-  const handleClick = () => {};
   const cardStyle = {
     backgroundColor: "rgba(255, 209, 102, 0.2)",
     border: "none",

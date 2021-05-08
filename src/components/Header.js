@@ -1,8 +1,11 @@
 import React from "react";
-import { Image, Jumbotron, Container, Button, Card } from "react-bootstrap";
+import { Image, Jumbotron, Container, Button} from "react-bootstrap";
 import logo from "../images/logo.png";
 
 export default function Header() {
+  const headerStyle = {
+      marginTop: "3em",
+  }
   const logoStyle = {
     rightWidth: "350px",
     height: "150px",
@@ -24,11 +27,8 @@ export default function Header() {
     border: "none",
   };
 
-  const handleClick = () => {
-    console.log("this works?");
-  };
   return (
-    <div>
+    <div style={headerStyle}>
       <Image src={logo} alt="logo" style={logoStyle} />
       <Jumbotron fluid style={jumbotronStyle}>
         <Container
