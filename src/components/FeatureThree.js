@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import Modal from "react-modal";
 
 export default function FeatureThree() {
   const handleClick = () => {};
@@ -21,6 +22,25 @@ export default function FeatureThree() {
   const bodyStyle = {
     marginLeft: "10em",
   };
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
+  };
   return (
     <>
       <br />
@@ -40,11 +60,19 @@ export default function FeatureThree() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Card.Text>
-            <Button onClick={handleClick} style={cardBtnStyle}>
+            <Button onClick={openModal} style={cardBtnStyle}>
               Go somewhere
             </Button>
           </Card.Body>
         </Card>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <Button onClick={closeModal}>close</Button>
+        </Modal>
       </div>
     </>
   );
