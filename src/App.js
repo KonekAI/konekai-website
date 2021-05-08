@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Airplane from "./components/Airplane";
+import Airplane2 from "./components/Airplane2";
 import Feature from "./components/Feature";
 import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
@@ -17,6 +18,9 @@ function App() {
         </Row>
         <Row>
           <Feature />
+        </Row>
+        <Row>
+          <Airplane2 />
         </Row>
         <Row style={{ paddingTop: "20px" }}>
           <FeatureTwo />
