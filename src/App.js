@@ -2,12 +2,12 @@ import { Container, Row } from "react-bootstrap";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
+import Airplane from "./components/Airplane";
 import Feature from "./components/Feature";
 import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 function App() {
-  
   return (
     <>
       <Container>
@@ -21,7 +21,10 @@ function App() {
         <Row style={{ paddingTop: "20px" }}>
           <FeatureTwo />
         </Row>
-        <Row style={{ paddingTop: "20px" }}>
+        <Row style={{ padding: "20px" }}>
+          <Airplane />
+        </Row>
+        <Row style={{ padding: "50px" }}>
           <FeatureThree />
         </Row>
         <Row>
