@@ -4,8 +4,11 @@ import { Card, Button } from "react-bootstrap";
 export default function FeatureThree() {
   const cardStyle = {
     backgroundColor: "rgba(255, 209, 102, 0.2)",
-    borderRadius: "20px",
-    width: "50%",
+    border: "none",
+    // height: "20em",
+    borderRadius: "30px 0px 0px 30px ",
+    width: "80%",
+    align: "right",
   };
 
   return (
@@ -18,6 +21,7 @@ export default function FeatureThree() {
       <Card style={cardStyle}>
         <Card.Body
           style={{
+            marginLeft: "10em",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
