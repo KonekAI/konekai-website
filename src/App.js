@@ -9,7 +9,7 @@ import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import { useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 function App() {
   return (
     <>
@@ -18,7 +18,7 @@ function App() {
         <Row>
           <Header />
         </Row>
-        <Row>
+        <Row style={{ paddingTop: "20px" }}>
           <Feature />
         </Row>
         <Row>
