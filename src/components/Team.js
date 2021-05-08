@@ -4,7 +4,7 @@ import James from "../images/James.png";
 import crystal from "../images/crystal.jpg";
 import arjun from "../images/arjun.jpeg";
 import background1 from "../images/background1.png";
-import { Card, CardDeck, Button } from "react-bootstrap";
+import { Card} from "react-bootstrap";
 
 const Team = () => {
   const telvinCard = () => (
