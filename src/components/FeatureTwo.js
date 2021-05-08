@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-export default function FeatureThree() {
+export default function FeatureTwo() {
   const cardStyle = {
     backgroundColor: "rgba(255, 209, 102, 0.2)",
     borderRadius: "20px",
@@ -12,6 +12,7 @@ export default function FeatureThree() {
     <div
       style={{
         display: "flex",
+        flexDirection: "row-reverse",
         justifyContent: "flex-end",
       }}
     >
