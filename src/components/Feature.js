@@ -3,8 +3,12 @@ import {Card, Button} from 'react-bootstrap';
 
 export default function Feature() {
     const cardStyle = {
-        backgroundColor:"#FFD166",
-        opacity:"20%"
+        backgroundColor:"rgba(255, 209, 102, 0.2)",
+        border: "none",
+        height: "20em",
+        borderRadius: "20px"
+        
+        
     }
     const cardBtnStyle = {
         backgroundColor:"#14EDC6",
@@ -14,7 +18,7 @@ export default function Feature() {
         <>
         <br/>
         <Card style={cardStyle}>
-        <Card.Body>
+        <Card.Body style={{opacity:1}}>
         <Card.Title>Getting to know new team members has never</Card.Title>
         <Card.Title>been this easy... </Card.Title>
         <Card.Text>
