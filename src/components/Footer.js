@@ -17,7 +17,7 @@ function Footer() {
         style={{marginRight:"10px"}}
         className="d-inline-block align-top"
       />{' '}
-      KONAK | AI
+      KONEK | AI
     </Navbar.Brand>
   </Navbar>
     </>

@@ -79,7 +79,7 @@ export default function Header() {
                   >
                     Get the power of AI backing your teams and research groups.
                     Productivity and collaboration is made easy with solidified fact checking 
-                    and understanding on the fly! 
+                    and onboarding on the fly! 
                   </p>
                 </div>
               </Col>
@@ -111,8 +111,8 @@ export default function Header() {
                 <a href={uri}>
                   <img
                     alt="Add to Slack"
-                    height="40"
-                    width="139"
+                    height="100%"
+                    width="150"
                     src="https://platform.slack-edge.com/img/add_to_slack.png"
                     srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
                   />
