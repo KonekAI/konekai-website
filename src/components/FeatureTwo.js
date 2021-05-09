@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import Modal from "react-modal";
+import blurb2 from "../images/blurb2.png";
 
 export default function FeatureTwo() {
   const cardStyle = {
@@ -41,6 +42,24 @@ export default function FeatureTwo() {
     },
   };
 
+  const blurbStyle = {
+    position: "relative",
+    right: "110px",
+    top: "-61px",
+    transform: "rotate(-36deg)",
+    opacity: 0.44,
+  };
+
+  const spanStyle = {
+    position: "relative",
+    right: "226px",
+    bottom: "63px",
+    fontFamily: "Racing Sans One",
+    fontSize: "36px",
+    zIndex: 7,
+    opacity: 1,
+  };
+
   return (
     <>
       <br />
@@ -51,6 +70,11 @@ export default function FeatureTwo() {
           justifyContent: "flex-end",
         }}
       >
+        <div>
+          <img src={blurb2} style={blurbStyle} alt="" />
+          <span style={spanStyle}>TEST</span>
+        </div>
+
         <Card style={cardStyle}>
           <Card.Body style={bodyStyle}>
             <Card.Title>Getting to know new team members has never</Card.Title>

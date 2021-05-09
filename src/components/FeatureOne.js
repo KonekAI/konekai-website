@@ -1,7 +1,7 @@
-import { React, useState} from "react";
+import { React, useState } from "react";
 import { Card, Button, Image } from "react-bootstrap";
 import Modal from "react-modal";
-import blurb from '../images/blurb1.png'
+import blurb from "../images/blurb1.png";
 
 export default function FeatureOne() {
   const cardStyle = {
@@ -34,14 +34,23 @@ export default function FeatureOne() {
     },
   };
   const blurbStyle = {
-      position: "relative",
-      right: "-187px",
-      top: "-84px",
-      transform: "rotate(-12deg)",
-      opacity: "44%",
+    position: "relative",
+    right: "-187px",
+    top: "-84px",
+    transform: "rotate(-12deg)",
+    opacity: "44%",
     //   marginLeft:"-9em",
     //   marginBottom: "-50em"
-  }
+  };
+  const spanStyle = {
+    position: "relative",
+    left: "246px",
+    bottom: "191px",
+    fontFamily: "Racing Sans One",
+    fontSize: "36px",
+    zIndex: 7,
+    opacity: "100%",
+  };
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
@@ -61,16 +70,23 @@ export default function FeatureOne() {
           marginTop: "5em",
         }}
       >
-          <div>
-              <div>
-                  <img src={blurb} style={blurbStyle} alt=""/>
-                  <span>TEST</span>
-              </div>
-          </div>
+        <div>
+          <img src={blurb} style={blurbStyle} alt="" />
+          <span style={spanStyle}>TEST</span>
+        </div>
+
         <Card style={cardStyle}>
           <Card.Body style={bodyStyle}>
-            <Card.Title style={{fontFamily:'Racing Sans One', fontSize:'30px'}}>Getting to know new team members has never</Card.Title>
-            <Card.Title style={{fontFamily:'Racing Sans One', fontSize:'30px'}}>been this easy... </Card.Title>
+            <Card.Title
+              style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
+            >
+              Getting to know new team members has never
+            </Card.Title>
+            <Card.Title
+              style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
+            >
+              been this easy...{" "}
+            </Card.Title>
             <br />
             <Card.Text>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

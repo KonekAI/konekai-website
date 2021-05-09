@@ -57,7 +57,7 @@ export default function Header() {
                     Collaborate and Learn{" "}
                   </h1>
                   <h1 style={{ fontFamily: "Racing Sans One" }}>
-                    Using the Power of Open AI
+                    Using the Power of AI
                   </h1>
                   <br />
                   <p
@@ -65,7 +65,7 @@ export default function Header() {
                       width: "20em",
                       margin: "3em 0em 3em 0em",
                       fontSize: "20px",
-                      fontFamily: "Racing Sans One",
+                      fontColor: "grey",
                     }}
                   >
                     a productivity and collaborative creativity bot that allows
