@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import { Card, Button, Image } from "react-bootstrap";
 import Modal from "react-modal";
-import blurb from '../images/blurb1.png';
-import wikiGif from '../images/wiki-bot-gif.gif';
+import blurb from "../images/blurb1.png";
+import wikiGif from "../images/wiki-bot-gif.gif";
 
 export default function FeatureOne() {
   const cardStyle = {
@@ -10,11 +10,11 @@ export default function FeatureOne() {
     border: "none",
     // height: "20em",
     borderRadius: "30px 0px 0px 30px ",
-    width: "80%",
+    width: "100%",
     align: "right",
   };
   const cardBtnStyle = {
-    backgroundColor: "rgba(20, 237, 198, 0.2)",
+    backgroundColor: "rgba(20, 237, 198, 0.6)",
     flex: "end",
     radius: "60px",
     border: "none",
@@ -43,30 +43,30 @@ export default function FeatureOne() {
     opacity: "44%",
     //   marginLeft:"-9em",
     //   marginBottom: "-50em"
-  }
+  };
   const gifStyle = {
-      borderRadius:"40px",
-  }
-  const modalBtnStyle={
-    background: "rgba(248, 174, 186, 0.5)",
+    borderRadius: "40px",
+  };
+  const modalBtnStyle = {
+    background: "rgba(248, 174, 186, 0.6)",
     border: "none",
     width: "85px",
     height: "50px",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: "20px",
-    borderRadius:"60px",
+    borderRadius: "60px",
     marginTop: "1em",
-    display:"inline-block",
-  }
+    display: "inline-block",
+  };
 
   const spanStyle = {
     position: "relative",
-    left: "246px",
-    bottom: "191px",
+    left: "230px",
+    bottom: "210px",
     fontFamily: "Racing Sans One",
-    fontSize: "36px",
-    zIndex: 7,
+    fontSize: "30px",
+    zIndex: 100,
     opacity: "100%",
   };
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -90,7 +90,7 @@ export default function FeatureOne() {
       >
         <div>
           <img src={blurb} style={blurbStyle} alt="" />
-          <span style={spanStyle}>TEST</span>
+          <span style={spanStyle}> Research</span>
         </div>
 
         <Card style={cardStyle}>
@@ -98,20 +98,22 @@ export default function FeatureOne() {
             <Card.Title
               style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
             >
-              Getting to know new team members has never
+              Collaborative research is now more reliable and inclusive
             </Card.Title>
-            <Card.Title
+            {/* <Card.Title
               style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
             >
               been this easy...{" "}
-            </Card.Title>
+            </Card.Title> */}
             <br />
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              With Konek AI, the user can ask the AI bot questions and it will
+              scour the internet and return an answer! <br></br>Allowing{" "}
+              <strong>quick</strong> research and <strong>reliable </strong>
+              reporting in group settings.
             </Card.Text>
             <Button onClick={openModal} style={cardBtnStyle}>
-              Go somewhere
+              Learn More
             </Button>
           </Card.Body>
         </Card>
@@ -122,11 +124,12 @@ export default function FeatureOne() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-          <Image src={wikiGif} style={gifStyle}/>
-          <div>
-          <Button onClick={closeModal} style={modalBtnStyle}>close</Button>
-          </div>
-        
+        <Image src={wikiGif} style={gifStyle} />
+        <div>
+          <Button onClick={closeModal} style={modalBtnStyle}>
+            close
+          </Button>
+        </div>
       </Modal>
     </>
   );
