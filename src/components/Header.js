@@ -6,10 +6,8 @@ import {
   Button,
   Row,
   Col,
-  Card,
 } from "react-bootstrap";
 import logo from "../images/logo.png";
-import meetTeam from "../images/meetTeam.png";
 
 export default function Header() {
   const client_id = "";
@@ -86,7 +84,7 @@ export default function Header() {
               <Col>
                 <iframe
                   style={iframeStyle}
-                  src="https://www.youtube.com/embed/C9wP7TfajJY"
+                  src="https://www.youtube.com/embed/C9wP7TfajJY?autoplay=1&mute=1"
                   title="KONEK | AI"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
