@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Image } from "react-bootstrap";
 import Modal from "react-modal";
 import blurb2 from "../images/blurb2.png";
-
+import qnaGif from "../images/tohack-qna-gif.gif"
 export default function FeatureTwo() {
   const cardStyle = {
     backgroundColor: "rgba(255, 209, 102, 0.2)",
@@ -19,6 +19,9 @@ export default function FeatureTwo() {
     border: "none",
     borderRadius: "60px",
   };
+  const gifStyle = {
+    borderRadius: "40px",
+  };
   const bodyStyle = {
     marginLeft: "10em",
   };
@@ -30,7 +33,18 @@ export default function FeatureTwo() {
   function closeModal() {
     setIsOpen(false);
   }
-
+  const modalBtnStyle = {
+    background: "rgba(248, 174, 186, 0.6)",
+    border: "none",
+    width: "85px",
+    height: "50px",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "20px",
+    borderRadius: "60px",
+    marginTop: "1em",
+    display: "inline-block",
+  };
   const customStyles = {
     content: {
       top: "50%",
@@ -103,7 +117,10 @@ export default function FeatureTwo() {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <Button onClick={closeModal}>close</Button>
+          <Image src={qnaGif} style={gifStyle} />
+          <div>
+          <Button onClick={closeModal} style={modalBtnStyle}>close</Button>
+          </div>
         </Modal>
       </div>
     </>

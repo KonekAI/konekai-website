@@ -100,11 +100,6 @@ export default function FeatureOne() {
             >
               Collaborative research is now more reliable and inclusive
             </Card.Title>
-            {/* <Card.Title
-              style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
-            >
-              been this easy...{" "}
-            </Card.Title> */}
             <br />
             <Card.Text>
               With Konek AI, the user can ask the AI bot questions and it will
