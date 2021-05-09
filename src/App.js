@@ -9,17 +9,17 @@ import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import NavBar from "./components/Navbar";
+import features from "./images/features.png";
 // import axios from "axios";
 function App() {
   const containerStyle = {
-    maxWidth:"100%",
-    margin:"0",
-    padding:"0",
-  }
+    maxWidth: "100%",
+    margin: "0",
+    padding: "20px",
+  };
   const featuresStyle = {
-    background: "#FAF1F1",
-    height: "20em"
-  }
+    height: "20em",
+  };
   return (
     <>
       <NavBar />
@@ -28,35 +28,41 @@ function App() {
         <Row>
           <Header />
         </Row>
-        </Container>
-        <div style={featuresStyle}>
-          <div style={{margin:"0 auto", textAlign:"center", padding:"0"}}>Features</div>
+      </Container>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img src={features} />
+      </div>
+
+      <Container>
+        <div id="features" style={{ marginTop: "3em" }}>
+          <Row style={{ paddingTop: "20px" }}>
+            <FeatureOne />
+          </Row>
+          <Row>
+            <Airplane2 />
+          </Row>
+          <Row style={{ paddingTop: "20px" }}>
+            <FeatureTwo />
+          </Row>
+          <Row style={{ padding: "20px" }}>
+            <Airplane />
+          </Row>
+          <Row style={{ padding: "50px" }}>
+            <FeatureThree />
+          </Row>
         </div>
-        <Container>
-        <div id="features" style={{marginTop:"3em"}}>
-        <Row>
-          <FeatureOne />
-        </Row>
-        <Row>
-          <Airplane2 />
-        </Row>
-        <Row style={{ paddingTop: "20px" }}>
-          <FeatureTwo />
-        </Row>
-        <Row style={{ padding: "20px" }}>
-          <Airplane />
-        </Row>
-        <Row style={{ padding: "50px" }}>
-          <FeatureThree />
-        </Row>
-        </div>
-        </Container>
-        <div id="team">
+      </Container>
+      <div id="team">
         <Row>
           <Team />
         </Row>
-        </div>
-      
+      </div>
     </>
   );
 }

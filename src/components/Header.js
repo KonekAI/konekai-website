@@ -9,7 +9,7 @@ import {
   Card,
 } from "react-bootstrap";
 import logo from "../images/logo.png";
-import line from "../images/line.png";
+import meetTeam from "../images/meetTeam.png";
 
 export default function Header() {
   const client_id = "";
@@ -103,12 +103,9 @@ export default function Header() {
                   maxWidth: "315px",
                 }}
               >
-                  <a href="#features">
-                  <Button style={btnStyle}>
-                  Learn More
-                </Button>
-                  </a>
-                
+                <a href="#features">
+                  <Button style={btnStyle}>Learn More</Button>
+                </a>
 
                 <a href={uri}>
                   <img
@@ -124,9 +121,7 @@ export default function Header() {
           </Container>
         </Jumbotron>
       </div>
-      <div>
-        <Card.Img variant="top" src={line} />
-      </div>
+      <div>{/* <Card.Img variant="top" src={line} /> */}</div>
     </>
   );
 }

@@ -4,7 +4,7 @@ import James from "../images/James.png";
 import crystal from "../images/crystal.jpg";
 import arjun from "../images/arjun.jpeg";
 import background1 from "../images/background1.png";
-import team from "../images/team.png";
+import meetTeam from "../images/meetTeam.png";
 import { Card } from "react-bootstrap";
 
 const Team = () => {
@@ -240,31 +240,16 @@ const Team = () => {
     </Card>
   );
 
-  const blurbStyle = {
-    position: "relative",
-    left: "715px",
-    bottom: "-100px",
-    transform: "rotate(-45deg)",
-    opacity: 0.44,
-    //   marginLeft:"-9em",
-    //   marginBottom: "-50em"
-  };
-
-  const spanStyle = {
-    /* left: 246px; */
-    /* bottom: 191px; */
-    fontFamily: "Racing Sans One",
-    fontSize: "36px",
-    zIndex: 7,
-    opacity: 1,
-    display: "flex",
-    justifyContent: "center",
-  };
-
   return (
     <div>
-      <div>
-        <span style={spanStyle}>Meet the Team</span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          paddingTop: "40px",
+        }}
+      >
+        <img src={meetTeam} />
       </div>
       <div
         style={{
