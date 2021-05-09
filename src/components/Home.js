@@ -23,7 +23,11 @@ function App() {
           </Row>
         </Container>
   
-        <div
+       
+  
+        <Container>
+          <div id="features" style={{ marginTop: "3em" }}>
+          <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -31,9 +35,6 @@ function App() {
         >
           <img src={features} alt=""/>
         </div>
-  
-        <Container>
-          <div id="features" style={{ marginTop: "3em" }}>
             <Row style={{ paddingTop: "20px" }}>
               <FeatureOne />
             </Row>
