@@ -23,7 +23,7 @@ export default function Header() {
     borderRadius: "60px",
     width: "130px",
     height: "50px",
-    display: "inline-block",
+    // display: "inline-block",
     // marginLeft: "7em",
     fontStyle: "normal",
     fontWeight: "normal",
@@ -52,20 +52,24 @@ export default function Header() {
               <Col>
                 <div style={{ flexDirection: "column" }}>
                   <Image src={logo} alt="logo" style={logoStyle} />
-                  <h1> Collaborate and Learn </h1>
-                  <h1>Using the Power of Open AI</h1>
+                  <h1 style={{ fontFamily: "Racing Sans One" }}>
+                    {" "}
+                    Collaborate and Learn{" "}
+                  </h1>
+                  <h1 style={{ fontFamily: "Racing Sans One" }}>
+                    Using the Power of Open AI
+                  </h1>
                   <br />
                   <p
                     style={{
                       width: "20em",
                       margin: "3em 0em 3em 0em",
                       fontSize: "20px",
+                      fontFamily: "Racing Sans One",
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    a productivity and collaborative creativity bot that allows
+                    solidified fact checking and understanding on the fly.
                   </p>
                 </div>
               </Col>
@@ -83,10 +87,17 @@ export default function Header() {
           </Container>
           <Container>
             <Row>
-              <Col style={{ display: "inline-block" }}>
-                <Button style={btnStyle}>Learn More</Button>
-              </Col>
-              <Col>
+              <Col
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  maxWidth: "315px",
+                }}
+              >
+                <Button style={btnStyle} href="#features">
+                  Learn More
+                </Button>
+
                 <a href={uri}>
                   <img
                     alt="Add to Slack"
