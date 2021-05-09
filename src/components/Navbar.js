@@ -15,13 +15,13 @@ function NavBar() {
   return (
     <div>
       <Navbar bg="light" style={{paddingLeft:"5em"}}>
-        <Navbar.Brand href="#home"> <Image src={logo} alt="logo" style={navLogo} /></Navbar.Brand>
+        <Navbar.Brand href="/"> <Image src={logo} alt="logo" style={navLogo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home" style={navLink}>Home</Nav.Link>
-            <Nav.Link href="#link"style={navLink}>Features</Nav.Link>
-            <Nav.Link href="#link"style={navLink}>Meet the Team</Nav.Link>
+            <Nav.Link href="/" style={navLink}>Home</Nav.Link>
+            <Nav.Link href="#features"style={navLink}>Features</Nav.Link>
+            <Nav.Link href="#team"style={navLink}>Meet the Team</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
