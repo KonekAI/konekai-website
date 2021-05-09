@@ -1,7 +1,8 @@
 import { React, useState} from "react";
 import { Card, Button, Image } from "react-bootstrap";
 import Modal from "react-modal";
-import blurb from '../images/blurb1.png'
+import blurb from '../images/blurb1.png';
+import wikiGif from '../images/wiki-bot-gif.gif';
 
 export default function FeatureOne() {
   const cardStyle = {
@@ -31,6 +32,7 @@ export default function FeatureOne() {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
+      borderRadius: "40px",
     },
   };
   const blurbStyle = {
@@ -41,6 +43,21 @@ export default function FeatureOne() {
       opacity: "44%",
     //   marginLeft:"-9em",
     //   marginBottom: "-50em"
+  }
+  const gifStyle = {
+      borderRadius:"40px",
+  }
+  const modalBtnStyle={
+    background: "rgba(248, 174, 186, 0.5)",
+    border: "none",
+    width: "85px",
+    height: "50px",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "20px",
+    borderRadius:"60px",
+    marginTop: "1em",
+    display:"inline-block",
   }
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
@@ -88,7 +105,11 @@ export default function FeatureOne() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <Button onClick={closeModal}>close</Button>
+          <Image src={wikiGif} style={gifStyle}/>
+          <div>
+          <Button onClick={closeModal} style={modalBtnStyle}>close</Button>
+          </div>
+        
       </Modal>
     </>
   );
