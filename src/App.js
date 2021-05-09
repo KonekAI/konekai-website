@@ -6,7 +6,6 @@ import Airplane from "./components/Airplane";
 import FeatureOne from "./components/FeatureOne";
 import Airplane2 from "./components/Airplane2";
 import FeatureTwo from "./components/FeatureTwo";
-import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import NavBar from "./components/Navbar";
 import Footer from './components/Footer';
