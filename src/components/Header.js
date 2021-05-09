@@ -103,9 +103,12 @@ export default function Header() {
                   maxWidth: "315px",
                 }}
               >
-                <Button style={btnStyle} href="#features">
+                  <a href="#features">
+                  <Button style={btnStyle}>
                   Learn More
                 </Button>
+                  </a>
+                
 
                 <a href={uri}>
                   <img
