@@ -13,7 +13,7 @@ export default function FeatureTwo() {
     align: "right",
   };
   const cardBtnStyle = {
-    backgroundColor: "rgba(20, 237, 198, 0.2)",
+    backgroundColor: "rgba(20, 237, 198, 0.6)",
     flex: "end",
     radius: "60px",
     border: "none",
@@ -72,20 +72,28 @@ export default function FeatureTwo() {
       >
         <div>
           <img src={blurb2} style={blurbStyle} alt="" />
-          <span style={spanStyle}>TEST</span>
+          <span style={spanStyle}>Q&A</span>
         </div>
 
         <Card style={cardStyle}>
           <Card.Body style={bodyStyle}>
-            <Card.Title>Getting to know new team members has never</Card.Title>
-            <Card.Title>been this easy... </Card.Title>
+            <Card.Title
+              style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
+            ></Card.Title>
+            <Card.Title
+              style={{ fontFamily: "Racing Sans One", fontSize: "30px" }}
+            >
+              Onboarding is now quick and swift!
+            </Card.Title>
             <br />
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Konek AI will reduce new hire onboarding time by a 50%! Allowing
+              the new employee to ask Konek AI questions about the company's
+              stack, employee expectations, and be a 24/7 reliable resource for
+              the new hire.
             </Card.Text>
             <Button onClick={openModal} style={cardBtnStyle}>
-              Go somewhere
+              Learn More
             </Button>
           </Card.Body>
         </Card>
