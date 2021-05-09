@@ -71,14 +71,15 @@ export default function Header() {
                   <br />
                   <p
                     style={{
-                      width: "20em",
+                      width: "22em",
                       margin: "3em 0em 3em 0em",
                       fontSize: "20px",
                       fontColor: "grey",
                     }}
                   >
-                    a productivity and collaborative creativity bot that allows
-                    solidified fact checking and understanding on the fly.
+                    Get the power of AI backing your teams and research groups.
+                    Productivity and collaboration is made easy with solidified fact checking 
+                    and understanding on the fly! 
                   </p>
                 </div>
               </Col>

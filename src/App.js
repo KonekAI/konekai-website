@@ -9,6 +9,7 @@ import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import NavBar from "./components/Navbar";
+import Footer from './components/Footer';
 import features from "./images/features.png";
 // import axios from "axios";
 function App() {
@@ -16,9 +17,6 @@ function App() {
     maxWidth: "100%",
     margin: "0",
     padding: "20px",
-  };
-  const featuresStyle = {
-    height: "20em",
   };
   return (
     <>
@@ -59,7 +57,9 @@ function App() {
         <Row>
           <Team />
         </Row>
-      </div>
+        </div>
+        <Footer/>
+      
     </>
   );
 }
