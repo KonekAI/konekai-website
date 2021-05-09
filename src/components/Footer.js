@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Image } from "react-bootstrap";
+import { Navbar} from "react-bootstrap";
 import logo from '../images/footer-icon.png';
 
 
