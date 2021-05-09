@@ -274,7 +274,7 @@ const Team = () => {
           backgroundImage:
             "url(https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 90%",
+          backgroundSize: "100% 100%",
         }}
       >
         {arjunCard()}

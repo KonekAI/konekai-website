@@ -9,6 +9,7 @@ import FeatureTwo from "./components/FeatureTwo";
 import FeatureThree from "./components/FeatureThree";
 import Team from "./components/Team";
 import NavBar from "./components/Navbar";
+import Footer from './components/Footer';
 // import axios from "axios";
 function App() {
   const containerStyle = {
@@ -17,8 +18,6 @@ function App() {
     padding:"0",
   }
   const featuresStyle = {
-    background: "#FAF1F1",
-    height: "20em"
   }
   return (
     <>
@@ -56,6 +55,7 @@ function App() {
           <Team />
         </Row>
         </div>
+        <Footer/>
       
     </>
   );
