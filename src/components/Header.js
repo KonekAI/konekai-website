@@ -86,7 +86,7 @@ export default function Header() {
                 <iframe
                   style={iframeStyle}
                   src="https://www.youtube.com/embed/PE5-xHptkJQ"
-                  title="YouTube video player"
+                  title="KONEK | AI"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
