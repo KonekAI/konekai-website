@@ -1,6 +1,15 @@
 import React from "react";
-import { Image, Jumbotron, Container, Button, Row, Col } from "react-bootstrap";
+import {
+  Image,
+  Jumbotron,
+  Container,
+  Button,
+  Row,
+  Col,
+  Card,
+} from "react-bootstrap";
 import logo from "../images/logo.png";
+import line from "../images/line.png";
 
 export default function Header() {
   const client_id = "";
@@ -113,20 +122,7 @@ export default function Header() {
         </Jumbotron>
       </div>
       <div>
-        <svg
-          width="100%"
-          height="278"
-          //    viewBox="0 0 1441 278"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1439 79.5744C1231 -58.0001 1027 -1.00005 856.5 179.5C686 360 447.714 237.5 369 179.5C309.43 135.606 160.5 -7.99977 2.5 158"
-            stroke="#118AB2"
-            stroke-opacity="0.2"
-            stroke-width="6"
-          />
-        </svg>
+        <Card.Img variant="top" src={line} />
       </div>
     </>
   );
