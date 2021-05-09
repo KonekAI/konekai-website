@@ -70,7 +70,7 @@ export default function FeatureTwo() {
     bottom: "63px",
     fontFamily: "Racing Sans One",
     fontSize: "36px",
-    zIndex: 7,
+    zIndex: 1,
     opacity: 1,
   };
 
