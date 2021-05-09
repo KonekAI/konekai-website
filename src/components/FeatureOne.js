@@ -1,6 +1,7 @@
 import { React, useState} from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Image } from "react-bootstrap";
 import Modal from "react-modal";
+import blurb from '../images/blurb1.png'
 
 export default function FeatureOne() {
   const cardStyle = {
@@ -32,6 +33,15 @@ export default function FeatureOne() {
       transform: "translate(-50%, -50%)",
     },
   };
+  const blurbStyle = {
+      position: "relative",
+      right: "-187px",
+      top: "-84px",
+      transform: "rotate(-12deg)",
+      opacity: "44%",
+    //   marginLeft:"-9em",
+    //   marginBottom: "-50em"
+  }
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
@@ -51,9 +61,15 @@ export default function FeatureOne() {
           marginTop: "5em",
         }}
       >
+          <div>
+              <div>
+                  <img src={blurb} style={blurbStyle} alt=""/>
+                  <span>TEST</span>
+              </div>
+          </div>
         <Card style={cardStyle}>
           <Card.Body style={bodyStyle}>
-            <Card.Title>Getting to know new team members has never</Card.Title>
+            <Card.Title style={{fontFamily:'Racing Sans One'}}>Getting to know new team members has never</Card.Title>
             <Card.Title>been this easy... </Card.Title>
             <br />
             <Card.Text>

@@ -33,7 +33,7 @@ function App() {
           <div style={{margin:"0 auto", textAlign:"center", padding:"0"}}>Features</div>
         </div>
         <Container>
-        <div id="features" style={{marginTop:"-7em"}}>
+        <div id="features" style={{marginTop:"3em"}}>
         <Row>
           <FeatureOne />
         </Row>
