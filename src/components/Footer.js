@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
     <Navbar bg="light" variant="light">
-    <Navbar.Brand href="#home" style={{margin:"10px"}}>
+    <Navbar.Brand href="/" style={{margin:"10px"}}>
       <img
         alt=""
         src={logo}

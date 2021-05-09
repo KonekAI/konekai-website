@@ -66,7 +66,7 @@ export default function FeatureOne() {
     bottom: "210px",
     fontFamily: "Racing Sans One",
     fontSize: "30px",
-    zIndex: 100,
+    zIndex: 1,
     opacity: "100%",
   };
   const [modalIsOpen, setIsOpen] = useState(false);

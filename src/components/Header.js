@@ -40,9 +40,9 @@ export default function Header() {
     border: "none",
   };
   const iframeStyle = {
-    width: "560px",
-    height: "315px",
-    margin: "5em 5em 10em 8em",
+    width: "680px",
+    height: "369px",
+    margin: "5em 0em 10em 8em",
     borderRadius: "50px",
   };
 
@@ -86,7 +86,7 @@ export default function Header() {
               <Col>
                 <iframe
                   style={iframeStyle}
-                  src="https://www.youtube.com/embed/PE5-xHptkJQ"
+                  src="https://www.youtube.com/embed/C9wP7TfajJY"
                   title="KONEK | AI"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
