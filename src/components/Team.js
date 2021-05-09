@@ -4,11 +4,12 @@ import James from "../images/James.png";
 import crystal from "../images/crystal.jpg";
 import arjun from "../images/arjun.jpeg";
 import background1 from "../images/background1.png";
+import team from "../images/team.png";
 import { Card } from "react-bootstrap";
 
 const Team = () => {
   const telvinCard = () => (
-    <Card style={{ width: "16rem" }}>
+    <Card style={{ width: "16rem" }} className="teamCard">
       <Card.Img
         variant="top"
         src={Telvin}
@@ -66,7 +67,7 @@ const Team = () => {
   );
 
   const jamesCard = () => (
-    <Card style={{ width: "16rem" }}>
+    <Card style={{ width: "16rem" }} className="teamCard">
       <Card.Img
         variant="top"
         src={James}
@@ -124,7 +125,7 @@ const Team = () => {
   );
 
   const crystalCard = () => (
-    <Card style={{ width: "16rem" }}>
+    <Card style={{ width: "16rem" }} className="teamCard">
       <Card.Img
         variant="top"
         src={crystal}
@@ -182,7 +183,7 @@ const Team = () => {
   );
 
   const arjunCard = () => (
-    <Card style={{ width: "16rem" }}>
+    <Card style={{ width: "16rem" }} className="teamCard">
       <Card.Img
         variant="top"
         src={arjun}
@@ -239,21 +240,48 @@ const Team = () => {
     </Card>
   );
 
+  const blurbStyle = {
+    position: "relative",
+    left: "715px",
+    bottom: "-100px",
+    transform: "rotate(-45deg)",
+    opacity: 0.44,
+    //   marginLeft:"-9em",
+    //   marginBottom: "-50em"
+  };
+
+  const spanStyle = {
+    /* left: 246px; */
+    /* bottom: 191px; */
+    fontFamily: "Racing Sans One",
+    fontSize: "36px",
+    zIndex: 7,
+    opacity: 1,
+    display: "flex",
+    justifyContent: "center",
+  };
+
   return (
-    <div
-      style={{
-        display: "flex",
-        padding: "100px",
-        justifyContent: "space-between",
-        backgroundImage: `url(${background1})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 90%",
-      }}
-    >
-      {arjunCard()}
-      {telvinCard()}
-      {crystalCard()}
-      {jamesCard()}
+    <div>
+      <div>
+        <span style={spanStyle}>Meet the Team</span>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          padding: "150px",
+          justifyContent: "space-between",
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% 90%",
+        }}
+      >
+        {arjunCard()}
+        {telvinCard()}
+        {crystalCard()}
+        {jamesCard()}
+      </div>
     </div>
   );
 };
