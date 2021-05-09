@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import Modal from "react-modal";
+import blurb3 from "../images/blurb3.png";
 
 export default function FeatureThree() {
   const cardStyle = {
@@ -40,6 +41,23 @@ export default function FeatureThree() {
       transform: "translate(-50%, -50%)",
     },
   };
+  const blurbStyle = {
+    position: "relative",
+    left: "201px",
+    top: "-61px",
+    transform: "rotate(196deg)",
+    opacity: 0.44,
+  };
+
+  const spanStyle = {
+    position: "relative",
+    left: "258px",
+    bottom: "168px",
+    fontFamily: "Racing Sans One",
+    fontSize: "36px",
+    zIndex: 7,
+    opacity: 1,
+  };
   return (
     <>
       <br />
@@ -50,6 +68,11 @@ export default function FeatureThree() {
           marginTop: "5em",
         }}
       >
+        <div>
+          <img src={blurb3} style={blurbStyle} alt="" />
+          <span style={spanStyle}>TEST</span>
+        </div>
+
         <Card style={cardStyle}>
           <Card.Body style={bodyStyle}>
             <Card.Title>Getting to know new team members has never</Card.Title>
