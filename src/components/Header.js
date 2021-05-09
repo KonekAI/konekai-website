@@ -79,7 +79,7 @@ export default function Header() {
                   >
                     Get the power of AI backing your teams and research groups.
                     Productivity and collaboration is made easy with solidified fact checking 
-                    and understanding on the fly! 
+                    and onboarding on the fly! 
                   </p>
                 </div>
               </Col>
