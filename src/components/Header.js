@@ -33,7 +33,7 @@ export default function Header() {
   const iframeStyle = {
     width: "560px",
     height: "315px",
-    margin: "5em 10em 10em 0em",
+    margin: "5em 5em 10em 8em",
     borderRadius: "50px",
   };
 
@@ -84,7 +84,7 @@ export default function Header() {
           <Container>
             <Row>
               <Col style={{ display: "inline-block" }}>
-                <Button style={btnStyle}>Learn More</Button>
+                <Button style={btnStyle} href='#features'>Learn More</Button>
               </Col>
               <Col>
                 <a href={uri}>

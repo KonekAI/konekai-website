@@ -69,8 +69,8 @@ export default function FeatureOne() {
           </div>
         <Card style={cardStyle}>
           <Card.Body style={bodyStyle}>
-            <Card.Title style={{fontFamily:'Racing Sans One'}}>Getting to know new team members has never</Card.Title>
-            <Card.Title>been this easy... </Card.Title>
+            <Card.Title style={{fontFamily:'Racing Sans One', fontSize:'30px'}}>Getting to know new team members has never</Card.Title>
+            <Card.Title style={{fontFamily:'Racing Sans One', fontSize:'30px'}}>been this easy... </Card.Title>
             <br />
             <Card.Text>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
