@@ -53,9 +53,6 @@ function App() {
           <Row style={{ padding: "20px" }}>
             <Airplane />
           </Row>
-          <Row style={{ padding: "50px" }}>
-            <FeatureThree />
-          </Row>
         </div>
       </Container>
       <div id="team">
