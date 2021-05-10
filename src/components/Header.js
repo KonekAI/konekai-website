@@ -10,9 +10,6 @@ import {
 import logo from "../images/logo.png";
 
 export default function Header() {
-  const client_id = "";
-  const state = "";
-  const uri = `https://slack.com/oauth/v2/authorize?scope=channels:read,groups:read,channels:manage,chat:write&client_id=${client_id}&state=${state}`;
   const headerStyle = {
     marginTop: "3em",
   };
@@ -106,7 +103,7 @@ export default function Header() {
                   <Button style={btnStyle}>Learn More</Button>
                 </a>
 
-                <a href={uri}>
+                {/* <a href={uri}> */}
                   <img
                     alt="Add to Slack"
                     height="100%"
@@ -114,8 +111,13 @@ export default function Header() {
                     src="https://platform.slack-edge.com/img/add_to_slack.png"
                     srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
                   />
-                </a>
+                  
+                 
+                {/* </a> */}
               </Col>
+              <div>
+                  <p style={{color:"green", marginLeft:"10.5em"}}>Coming Soon</p>
+                  </div>
             </Row>
           </Container>
         </Jumbotron>
